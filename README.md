@@ -1,0 +1,2 @@
+# sliding-window-selective-repeat
+Implementation of Sliding Window Selective Repeat protocol with sequence numbers. For each frame f, compute CRC-8 and append with f. Then, randomly decide whether to corrupt a frame or not. Next, if random move is to corrupt f, then randomly corrupt, say 6 to 10 bits in f before transmission. Finally, wait for ACK or NACK from the receiver. Accordingly, transmit a new frame or re-transmit the previous frame.
